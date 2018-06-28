@@ -6,7 +6,7 @@ server:
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://127.0.0.1:3306/depot
+        url: jdbc:mysql://127.0.0.1:3306/cashbook
         username: root
         password: root
         # 使用druid数据源
@@ -27,7 +27,7 @@ spring:
         maxOpenPreparedStatements: 20
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.winter.model
+  type-aliases-package: com.wgl.db.model
 
 #pagehelper分页插件
 pagehelper:
