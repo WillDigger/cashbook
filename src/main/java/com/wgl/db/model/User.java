@@ -1,5 +1,7 @@
 package com.wgl.db.model;
 
+import java.util.Date;
+
 public class User {
 
     private long id;
@@ -11,6 +13,10 @@ public class User {
     private String phone;
 
     private String password;
+
+    private Date lastLogin;
+
+    private Date createTime;
 
     public long getId() {
         return id;
@@ -50,5 +56,21 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Date getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(Date lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }
